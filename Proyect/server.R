@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
     MatrizEdad = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","age" = Etiquetas))
     MatrizZona = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","address" = Etiquetas))
     MatrizTamaniofamilia = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","famsize" = Etiquetas))
-    Matrizeducacionmadres = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","Medu" = Etiquetas))
+    Matrizeducacionmadres = matrix(c(0.404011,0.595989), ncol = 2,nrow = 1, dimnames = list("value","Medu" = Etiquetas))
     Matrizeducacionpadres = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","Fedu" = Etiquetas))
     MatrizRazonparaescogercolegio = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","reason" = Etiquetas))
     MatrizGuardinaestudiantil = matrix(c(0.50,0.50), ncol = 2,nrow = 1, dimnames = list("value","guardian" = Etiquetas))
@@ -176,7 +176,10 @@ shinyServer(function(input, output) {
     
     #consulta
       #Porbabilidad de aporebar
-      probAlumno = cpquery(Modelo,G3=="OP1", (sex =="OP1" & age =="OP1" & address=="OP1"  & famsize=="OP1" & Medu=="OP1" & Fedu=="OP1" & reason=="OP1" & guardian=="OP1" & failures=="OP1" & romantic =="OP1" & freetime =="OP1"), n=10000000)
+    
+      probAlumno = cpquery(Modelo,Mjob=="OP1", Medu =="OP1", n=1)
+    
+      #probAlumno = cpquery(Modelo,G3=="OP1", (sex =="OP1" & age =="OP1" & address=="OP1"  & famsize=="OP1" & Medu=="OP1" & Fedu=="OP1" & reason=="OP1" & guardian=="OP1" & failures=="OP1" & romantic =="OP1" & freetime =="OP1"), n=10000000)
       #probAlumno = cpquery(Modelo, event = (G3=="OP1"), evidence = list(sex ="OP1" , age ="OP1" , address="OP1"  , famsize="OP1" , Medu="OP1" , Fedu="OP1" , reason="OP1" , guardian="OP1" , failures="OP1" , romantic ="OP1" , freetime ="OP1"), n=10000000)
       #probAlumno = cpquery(Modelo,G3=="OP1", (c(varS) & age ==variableAge & address==variableAddress  & famsize==variableDFamsize & Medu==variableMedu & Fedu==variableFedu & reason==variableReason & guardian==variableGuardian & failures==variableFailures & romantic ==variableRomantic & freetime ==variableFreetime), n=10000000)
       
