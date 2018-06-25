@@ -9,19 +9,19 @@ shinyUI(pageWithSidebar(
   sidebarPanel(    
     #1
     selectInput("sex", "Sexo:",
-                list("Mujer" = "OP1",   #F 
+                c("Mujer" = "OP1",   #F 
                      "Hombre" = "OP2"   #M
                 )),
     
     #2
     selectInput("age", "Edad:",
-                list("Mayor de 18" = "OP1", #"mature", 
+                c("Mayor de 18" = "OP1", #"mature", 
                      "Menor de 18" = "OP2"  #"notMature"
                 )),
     
     #3
     selectInput("address ", "Zona",
-                list("urbano" = "OP1", #"1", 
+                c("urbano" = "OP1", #"1", 
                      "rural" = "OP2"  #"0"
                 )),
     
@@ -79,8 +79,29 @@ shinyUI(pageWithSidebar(
   ),
   
   mainPanel(
+    
+    textOutput("Aselected_var1"),
+    textOutput("Aselected_var2"),
+    textOutput("Aselected_var3"),
+    textOutput("Aselected_var4"),
+    textOutput("Aselected_var5"),
+    textOutput("Aselected_var6"),
+    textOutput("Aselected_var7"),
+    textOutput("Aselected_var8"),
+    textOutput("Aselected_var9"),
+    textOutput("Aselected_var10"),
+    
+    
+    
     textOutput("selected_var1"),
     textOutput("selected_var2"),
-    textOutput("selected_var3")
+    textOutput("selected_var3"),
+    textOutput("selected_var4"),
+    textOutput("selected_var5"),
+    textOutput("selected_var6"),
+    textOutput("selected_var7"),
+    textOutput("selected_var8"),
+    textOutput("selected_var9"),
+    textOutput("selected_var10")
   )
 ))
