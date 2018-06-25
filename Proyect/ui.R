@@ -79,6 +79,8 @@ shinyUI(pageWithSidebar(
   ),
   
   mainPanel(
-    textOutput("selected_var")
+    textOutput("selected_var1"),
+    textOutput("selected_var2"),
+    textOutput("selected_var3")
   )
 ))
