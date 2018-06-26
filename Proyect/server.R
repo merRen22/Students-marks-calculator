@@ -164,31 +164,31 @@ shinyServer(function(input, output) {
   
   
   #alumnos aporbados
-  AprobG3alumno1 = cpquery(Modelo,G3== "OP1", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  AprobG3alumno2 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  AprobG3alumno3 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  AprobG3alumno4 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP2" & failures=="OP2"&romantic =="OP2" & freetime =="OP2"), n=1000000)
-  AprobG3alumno5 = cpquery(Modelo,G3== "OP1", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  AprobG3alumno6 = cpquery(Modelo,G3== "OP1", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  AprobG3alumno7 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  AprobG3alumno8 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  AprobG3alumno9 = cpquery(Modelo,G3== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  AprobG3alumno10 = cpquery(Modelo,G3=="OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno1 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno2 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  AprobG3alumno3 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno4 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP2" & failures=="OP2"&romantic =="OP2" & freetime =="OP2"), n=1000000)
+  AprobG3alumno5 = cpquery(Modelo,G2== "OP1", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno6 = cpquery(Modelo,G2== "OP1", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  AprobG3alumno7 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno8 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno9 = cpquery(Modelo,G2== "OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  AprobG3alumno10 = cpquery(Modelo,G1=="OP1", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
   
   
   
   
   #desaprobados
-  probG3alumno1 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno2 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno3 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno4 = cpquery(Modelo,G3=="OP2", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  probG3alumno5 = cpquery(Modelo,G3=="OP2", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno6 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP1"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno7 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno8 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
-  probG3alumno9 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP1"), n=1000000)
-  probG3alumno10 = cpquery(Modelo,G3=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP2" & freetime =="OP1"), n=1000000)
+  probG3alumno1 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno2 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno3 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno4 = cpquery(Modelo,G2=="OP2", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  probG3alumno5 = cpquery(Modelo,G2=="OP2", (sex =="OP2" & age =="OP2" & address=="OP2"&famsize=="OP2" & Medu=="OP1" & Fedu=="OP1"&reason=="OP1" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno6 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP1"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno7 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP1" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno8 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP1" & freetime =="OP2"), n=1000000)
+  probG3alumno9 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP1" & freetime =="OP1"), n=1000000)
+  probG3alumno10 = cpquery(Modelo,G2=="OP2", (sex =="OP1" & age =="OP2" & address=="OP2"&famsize=="OP1" & Medu=="OP1" & Fedu=="OP1"&reason=="OP2" & guardian=="OP1" & failures=="OP2"&romantic =="OP2" & freetime =="OP1"), n=1000000)
   
   
   
@@ -196,8 +196,8 @@ shinyServer(function(input, output) {
   observeEvent(input$go,{
 
     #variableAddress = (modelstring(input$address)) 
-    print(toString(input$sex))
-    variableAddress = as.bn(modelstring("OP1"))
+    #print(toString(input$sex))
+    #variableAddress = as.bn(modelstring("OP1"))
     
     varS = input$sex
     var = toString(input$age)
@@ -251,7 +251,7 @@ shinyServer(function(input, output) {
 
     
       #Porbabilidad de aporebar
-    probAlumnoG3 = cpquery(Modelo,G3=="OP1", (sex =="OP2" & age ==c(var) & address== (variableAddress) &famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
+    probAlumnoG3 = cpquery(Modelo,G3=="OP1", (sex =="OP2" & age =="OP1" & address=="OP1" &famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
     probAlumnoG1 = cpquery(Modelo,G1=="OP1", (sex =="OP2" & age =="OP1" & address=="OP1"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
     probAlumnoG2 = cpquery(Modelo,G2=="OP1", (sex =="OP2" & age =="OP1" & address=="OP1"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
     

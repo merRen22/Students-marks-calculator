@@ -21,8 +21,8 @@ shinyUI(pageWithSidebar(
     
     #3
     selectInput("address ", "Zona",
-                c("urbano" = "OP1", #"1", 
-                     "rural" = "OP2"  #"0"
+                c("urbano" = "OP2", #"1", 
+                     "rural" = "OP1"  #"0"
                 )),
     
     #4
@@ -33,14 +33,14 @@ shinyUI(pageWithSidebar(
     
     #5
     selectInput("failures", "Cursos jalados",
-                list("Ninguno" = "OP1", #"0", 
-                     "Al menos 1" = "OP2"  #"1"
+                list("Ninguno" = "OP2", #"0", 
+                     "Al menos 1" = "OP1"  #"1"
                 )),
     
     #6
     selectInput("romantic", "Relacion sentimental",
-                list("Si" = "OP1", #"y", 
-                     "No" = "OP2"  #"n"
+                list("Si" = "OP2", #"y", 
+                     "No" = "OP1"  #"n"
                 )),
     
     #7
