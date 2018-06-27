@@ -195,24 +195,7 @@ shinyServer(function(input, output) {
   #Evento btn
   observeEvent(input$go,{
 
-    var <- 1:11
-    
     #VARIABLES
-    var[1] = paste(input$sex)
-    vfenfi = toString(input$age)
-    #var1 = toString(input$address)
-    variableFailures = input$failures
-    variableDFamsize = input$famsize
-    variableRomantic = input$romantic
-    variableMedu = input$Medu
-    variableFedu = input$Fedu
-    variableGuardian = input$guardian
-    variableReason = input$reason
-    variableFreetime = input$freetime
-    variableGuardian = input$guardian
-
-    print(var[1])
-    
     #consulta
     #MatrizSexo
     #OP1 = F, OP2 = M
@@ -247,29 +230,53 @@ shinyServer(function(input, output) {
     #MatrizTiempolibre 
     #OP1 = FT1, OP2 = FT2
 
+
     
-    strOP1 = "OP1"
     
-    vars = 1:11
-    vars[1]="G3"
-    obs = 2
+    GPAGE2_Query  = "sex == ";
+    GPAGE2_Query  <- paste(GPAGE2_Query , "\'", input$sex , "\'", sep="")
     
-    va = "OP1"
     
-    ev <- "sex == 'OP1'"
+    ageInput = "age == ";
+    ageInput <- paste(ageInput, "\'", input$age , "\'", sep="")
     
-    #Porbabilidad de aporebar
-    nameS = "sex"
-    str3 = paste("(", nameS, " == '",as.character("OP1"), "')", sep = "")
+    zonaInput = "address == ";
+    zonaInput <- paste(zonaInput, "\'", input$zone , "\'", sep="")
     
-    probAlumnoG3 = cpquery(Modelo,G3=="OP1", as.list( str3), n=10000000)
-    probAlumnoG3 = cpquery(Modelo,G3=="OP1", (sex == list(va)  & age =="OP1" & address=="OP1"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
-    probAlumnoG1 = cpquery(Modelo,G1=="OP1", (sex =="OP2" & age =="OP1" & address=="OP1"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
-    probAlumnoG2 = cpquery(Modelo,G2=="OP1", (sex =="OP2" & age =="OP1" & address=="OP1"&famsize=="OP2" & Medu=="OP2" & Fedu=="OP2"&reason=="OP2" & guardian=="OP1" & failures=="OP1"&romantic =="OP2" & freetime =="OP1"), n=10000000)
+    famsizeInput = "famsize == ";
+    famsizeInput <- paste(famsizeInput, "\'", input$famsize , "\'", sep="")
+    
+    meduInput = "Medu == ";
+    meduInput <- paste(meduInput, "\'", input$Medu , "\'", sep="")
+    
+    feduInput = "Fedu == ";
+    feduInput <- paste(feduInput, "\'", input$Fedu  , "\'", sep="")
+    
+    reasonInput = "reason == ";
+    reasonInput <- paste(reasonInput, "\'", input$reason , "\'", sep="")
+    
+    guardianInput = "guardian == ";
+    guardianInput <- paste(guardianInput, "\'", input$guardian , "\'", sep="")
+    
+    failuresInput = "failures == ";
+    failuresInput <- paste(failuresInput, "\'", input$failures , "\'", sep="")
+    
+    romanticInput = "romantic == ";
+    romanticInput <- paste(romanticInput, "\'", input$romantic , "\'", sep="")
+    
+    freetimeInput = "freetime == ";
+    freetimeInput <- paste(freetimeInput, "\'", input$freetime , "\'", sep="")
+    
+    probAlumnoG3 <- cpquery(Modelo,G3=="OP1",  (eval(parse(text=GPAGE2_Query))) & (eval(parse(text=ageInput))) &(eval(parse(text=zonaInput))) &(eval(parse(text=famsizeInput))) &(eval(parse(text=meduInput))) &(eval(parse(text=feduInput))) &(eval(parse(text=reasonInput))) &(eval(parse(text=guardianInput))) &(eval(parse(text=failuresInput))) &(eval(parse(text=romanticInput))) &(eval(parse(text=freetimeInput)))  , n=10000000)
+    probAlumnoG1 <- cpquery(Modelo,G1=="OP1",  (eval(parse(text=GPAGE2_Query))) & (eval(parse(text=ageInput))) &(eval(parse(text=zonaInput))) &(eval(parse(text=famsizeInput))) &(eval(parse(text=meduInput))) &(eval(parse(text=feduInput))) &(eval(parse(text=reasonInput))) &(eval(parse(text=guardianInput))) &(eval(parse(text=failuresInput))) &(eval(parse(text=romanticInput))) &(eval(parse(text=freetimeInput)))  , n=10000000)
+    probAlumnoG2 <- cpquery(Modelo,G2=="OP1",  (eval(parse(text=GPAGE2_Query))) & (eval(parse(text=ageInput))) &(eval(parse(text=zonaInput))) &(eval(parse(text=famsizeInput))) &(eval(parse(text=meduInput))) &(eval(parse(text=feduInput))) &(eval(parse(text=reasonInput))) &(eval(parse(text=guardianInput))) &(eval(parse(text=failuresInput))) &(eval(parse(text=romanticInput))) &(eval(parse(text=freetimeInput)))  , n=10000000)
+    
+    print("probabilidad calculada")
+    
     
     output$respuestaConsultaG3 <- renderText({paste("Tus probabilidades de aprobar este anio escolar (G3) son de  : ", probAlumnoG3)})
     output$respuestaConsultaG1 <- renderText({paste("Tus probabilidades de aprobar este primer semestre (G1) son de  : ", probAlumnoG1)})
-    output$respuestaConsultaG2 <- renderText({paste("Tus probabilidades de aprobar este segundo semestre (G3) son de  : ", probAlumnoG2)})
+    output$respuestaConsultaG2 <- renderText({paste("Tus probabilidades de aprobar este segundo semestre (G2) son de  : ", probAlumnoG2)})
     
     #DATOS DE PRUEBA DEL EXCEL
     #aqui aprobados

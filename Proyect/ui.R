@@ -20,7 +20,7 @@ shinyUI(pageWithSidebar(
                 )),
     
     #3
-    selectInput("address ", "Zona",
+    selectInput("zone ", "Zona",
                 c("urbano" = "OP2", #"1", 
                      "rural" = "OP1"  #"0"
                 )),
