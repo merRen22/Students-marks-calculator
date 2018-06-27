@@ -80,28 +80,33 @@ shinyUI(pageWithSidebar(
   
   mainPanel(
     
-    textOutput("Aselected_var1"),
-    textOutput("Aselected_var2"),
-    textOutput("Aselected_var3"),
-    textOutput("Aselected_var4"),
-    textOutput("Aselected_var5"),
-    textOutput("Aselected_var6"),
-    textOutput("Aselected_var7"),
-    textOutput("Aselected_var8"),
-    textOutput("Aselected_var9"),
-    textOutput("Aselected_var10"),
+    #APORBADOS
+    #textOutput("Aselected_var1"),
+    #textOutput("Aselected_var2"),
+    #textOutput("Aselected_var3"),
+    #textOutput("Aselected_var4"),
+    #textOutput("Aselected_var5"),
+    #textOutput("Aselected_var6"),
+    #textOutput("Aselected_var7"),
+    #textOutput("Aselected_var8"),
+    #textOutput("Aselected_var9"),
+    #textOutput("Aselected_var10"),
     
+    #Desaporbados
+    #textOutput("selected_var1"),
+    #textOutput("selected_var2"),
+    #textOutput("selected_var3"),
+    #textOutput("selected_var4"),
+    #textOutput("selected_var5"),
+    #textOutput("selected_var6"),
+    #textOutput("selected_var7"),
+    #textOutput("selected_var8"),
+    #textOutput("selected_var9"),
+    #textOutput("selected_var10")
     
+    textOutput("respuestaConsultaG3"),
+    textOutput("respuestaConsultaG1"),
+    textOutput("respuestaConsultaG2")
     
-    textOutput("selected_var1"),
-    textOutput("selected_var2"),
-    textOutput("selected_var3"),
-    textOutput("selected_var4"),
-    textOutput("selected_var5"),
-    textOutput("selected_var6"),
-    textOutput("selected_var7"),
-    textOutput("selected_var8"),
-    textOutput("selected_var9"),
-    textOutput("selected_var10")
   )
 ))
