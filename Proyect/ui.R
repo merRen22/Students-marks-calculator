@@ -80,6 +80,7 @@ shinyUI(pageWithSidebar(
   
   mainPanel(
     
+    
     #APORBADOS
     #textOutput("Aselected_var1"),
     #textOutput("Aselected_var2"),
@@ -105,8 +106,10 @@ shinyUI(pageWithSidebar(
     #textOutput("selected_var10")
     
     textOutput("respuestaConsultaG3"),
+    textOutput("recomendacion1"),
     textOutput("respuestaConsultaG1"),
-    textOutput("respuestaConsultaG2")
-    
+    textOutput("recomendacion2"),
+    textOutput("respuestaConsultaG2"),
+    textOutput("recomendacion3")
   )
 ))

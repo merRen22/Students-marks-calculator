@@ -275,9 +275,31 @@ shinyServer(function(input, output) {
     
     
     output$respuestaConsultaG3 <- renderText({paste("Tus probabilidades de aprobar este anio escolar (G3) son de  : ", probAlumnoG3)})
+    
+    
     output$respuestaConsultaG1 <- renderText({paste("Tus probabilidades de aprobar este primer semestre (G1) son de  : ", probAlumnoG1)})
     output$respuestaConsultaG2 <- renderText({paste("Tus probabilidades de aprobar este segundo semestre (G2) son de  : ", probAlumnoG2)})
     
+    if(probAlumnoG3 <0.50){
+      output$recomendacion1 <- renderText({paste("Deberias estudiar puede que DESAPRUEBES")})  
+      
+    }
+    else{output$recomendacion1 <- renderText({paste("Tienes posibilidades de aprobar este anio")})   }
+    
+    
+    if(probAlumnoG1 <0.50){
+      output$recomendacion2 <- renderText({paste("Deberias estudiar puede que DESAPRUEBES")})  
+      
+    }
+    else{output$recomendacion2 <- renderText({paste("Tienes posibilidades de APROBAR este primer semestre")})   }
+    
+    
+    
+    if(probAlumnoG2 <0.50){
+      output$recomendacion3 <- renderText({paste("Deberias estudiar puede que DESAPRUEBES")})  
+      
+    }
+    else{output$recomendacion3 <- renderText({paste("Tienes posibilidades de APROBAR este segundo semestre")})   }
     #DATOS DE PRUEBA DEL EXCEL
     #aqui aprobados
     #output$Aselected_var1 <- renderText({paste("APROBADOTus probabilidades de aprobar este anio escolar (G3) son de  : ", AprobG3alumno1)})

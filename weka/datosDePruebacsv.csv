@@ -1,44 +1,41 @@
-sex;age;address;famsize;Medu;Fedu;reason;guardian;failures;romantic;freetime;G1;G2;G3;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP2;OP1;OP1;OP1;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP2;OP1;OP1;OP2;OP1;OP2;OP1;OP1;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP1;OP2;OP2;OP1;OP1;OP1;OP1;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP1;OP2;OP2;OP1;OP2;OP2;OP2;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP1;OP2;OP2;OP1;OP1;OP1;OP1;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP1;OP2;OP2;OP1;OP1;OP1;OP1;OP1;OP2;OP1;OP1;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP1;OP1;OP1;OP1;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP1;OP1;OP1;OP2;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP2;OP1;OP2;OP2;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-OP2;OP2;OP2;OP2;OP2;OP2;OP1;OP1;OP2;OP1;OP2;APROBADO;APROBADO;APROBADO;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;Posibilidad de aprobar;;;;;;;;;;LISTA ALUMNOS APROBADOS;;;;;;;;;;;;;;
-;;;;APROBADOS;;;;;;;;;;indice;sex;age;address;famsize;Medu;Fedu;reason;guardian;failures;romantic;freetime;Promedio final;Primer semestre;Segundo semestre
-;;;;G3;G1;G2;indice;Prom. final;Prom. semestre;Prom. Semestre;;;;1;M;<=18;Urbano;Menos de 3;Superior;Superior;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;1;0.521942446;0.482859227;0.470106762;1;52%;48%;47%;;;;2;M;<=18;Urbano;Menos de 3;Superior;Superior;Cursos;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;2;0.569295775;0.526283804;0.523378141;2;57%;53%;52%;;;;3;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;3;0.536571902;0.494592346;0.505068995;3;54%;49%;51%;;;;4;M;<=18;Urbano;Mas de 3;Basica;Basica;reputacion;otros;0;Si;Mucho;APROBADO;APROBADO;APROBADO
-;;;4;0.528497409;0.551219512;0.491150442;4;53%;55%;49%;;;;5;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;5;0.529123711;0.49111594;0.499244903;5;53%;49%;50%;;;;6;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;6;0.580352293;0.536216047;0.551606234;6;58%;54%;55%;;;;7;M;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;7;0.527233115;0.484247051;0.505468642;7;53%;48%;51%;;;;8;M;<=18;Urbano;Mas de 3;Superior;Superior;Cursos;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;8;0.507591001;0.473674622;0.500743771;8;51%;47%;50%;;;;9;M;<=18;Urbano;Menos de 3;Superior;Basica;Cursos;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;9;0.514229637;0.472371638;0.479186377;9;51%;47%;48%;;;;10;M;<=18;Urbano;Menos de 3;Basica;Basica;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;10;0.513484929;0.517577069;0.486827662;10;51%;52%;49%;;;;;;;;;;;;;;;;;;
-;;;;5.328322218;5.030157257;5.012781929;;;;;;;;LISTA ALUMNOS DESAPROBADOS;;;;;;;;;;;;;;
-;;;;0.532832222;0.503015726;0.501278193;;;;;;;;indice;sex;age;address;famsize;Medu;Fedu;reason;guardian;failures;romantic;freetime;Promedio final;Primer semestre;Segundo semestre
-;;POSIBILIDAD DE DESAPROBAR;;;;;;;;;;;;1;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;;DESAPROBADOS;;;;;;;;;;2;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;;G3;G1;G2;indice;Prom. final;Prom. semestre;Prom. Semestre;;;;3;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;1;0.424317027;0.459848843;0.459930861;1;42%;46%;46%;;;;4;M;<=18;Urbano;Mas de 3;Superior;Basica;Cursos;padres;al menos 1;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;2;0.42324969;0.462528447;0.446383449;2;42%;46%;45%;;;;5;M;<=18;Urbano;Menos de 3;Superior;Superior;reputacion;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;3;0.426025098;0.462174388;0.440718184;3;43%;46%;44%;;;;6;F;<=18;Rural;Mas de 3;Basica;Superior;Cursos;padres;0;No;Poco;APROBADO;APROBADO;APROBADO
-;;;4;0.508070715;0.539044731;0.486861314;4;51%;54%;49%;;;;7;F;<=18;Urbano;Mas de 3;Basica;Basica;Cursos;padres;al menos 1;No;Poco;APROBADO;APROBADO;APROBADO
-;;;5;0.428981666;0.463436722;0.429272646;5;43%;46%;43%;;;;8;F;<=18;Urbano;Mas de 3;Basica;Superior;reputacion;padres;0;No;Mucho;APROBADO;APROBADO;APROBADO
-;;;6;0.437756498;0.460580913;0.444753301;6;44%;46%;44%;;;;9;F;<=18;Urbano;Mas de 3;Basica;Basica;reputacion;padres;al menos 1;No;Poco;APROBADO;APROBADO;APROBADO
-;;;7;0.433029285;0.460189573;0.463147884;7;43%;46%;46%;;;;10;F;<=18;Urbano;Mas de 3;Superior;Superior;reputacion;padres;0;Si;Poco;APROBADO;APROBADO;APROBADO
-;;;8;0.48799608;0.514376218;0.525225445;8;49%;51%;53%;;;;;;;;;;;;;;;;;;
-;;;9;0.41968254;0.470512821;0.435705368;9;42%;47%;44%;;;;;;;;;;;;;;;;;;
-;;;10;0.427714714;0.480500212;0.468008475;10;43%;48%;47%;;;;;;;;;;;;;;;;;;
-;;;;4.416823312;4.773192867;4.600006927;;;;;;;;;;;;;;;;;;;;;;
-;;;;0.441682331;0.477319287;0.460000693;;;;;;;;;;;;;;;;;;;;;;
+Probabilidades de nodos;;;;;;;;;
+Sexo;;;;;;;;;
+;;;;;;Promedio final;;;
+;;;;;;G1= primer semestre;;;
+Edad;;;;;;G2= segundo semestre;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Educacion madres y padre;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;Primer semestre;;;
+;;;;;;;;;
+;;;;;;;;;
+Zona;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Cursos jalados;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;Segundo semestre;;;
+Romance;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Guardin;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Tamaño de familia ;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Tiempo libre (poco o muhco);;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+Razon para escoger colegio (Reputacion y cerca a casa o cursos);;;;;;* Las probabilidades asociadas al resto de nodos estan en la imagen adjunta de la red bayesiana;;;
+;;;;;;;;;
+;;;;;;;;;
