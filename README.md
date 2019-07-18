@@ -1,4 +1,3 @@
-# TF-IA
+# Bayes network
 
-
-Trabajo final inteligencia artificial
+Bayes network to predict student performance
